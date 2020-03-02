@@ -1,18 +1,22 @@
 import React from 'react';
 import './App.css';
+import Name from './Name.js';
 
 function App() {
+  let ourName = <Name currentName='Rhonda'/>;
   return (
     <main className='App'>
       <header>
-        <h1>{props.Name}s Resume</h1>
+
+        <h1>{ourName}s Resume</h1>
+
       </header>
       <section>
         <header>
-          <h2>Sally Student Contact Info:</h2>
+          <h2>{ourName} Student Contact Info:</h2>
         </header>
         <address>
-          <a href="mailto:sallystudent@mozilla.org">sallystudent@mozilla.org</a>
+          <a href="mailto:sallystudent@mozilla.org">{ourName}student@mozilla.org</a>
           <br />
           <a href="tel:1-562-867-5309">1-562-867-5309</a>
           <br />

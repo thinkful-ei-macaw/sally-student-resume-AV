@@ -1,9 +1,16 @@
 import React from 'react'
 
+
+
 function Name(props) {
+  let nameVariable =  props.currentName;
   return (
-    <span> 
-      
-    </span>
+  <span>
+    {nameVariable}
+  </span>
   )
 }
+
+
+
+export default Name;
